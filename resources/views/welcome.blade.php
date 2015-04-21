@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <style type="text/css">
-      html, body, #map-canvas { height: 100%; width: 100%; margin: 0; padding: 0;}
+      html, body, #map-canvas { height: 100%; width: 100%; margin: 0; padding: 0; color:#FFF;}
 
       #map-canvas{
 		  position: absolute;
 		  top: 0px;
       }
 
-      .title{
+  	.content{
       	z-index: 1000;
 	  	position: absolute;
   		font-family: 'Poiret One', cursive;
+  	}
+
+      .title{
 		padding: 20px 40px;
 		text-align: center;
 		background-color: rgba(131, 131, 131, 0.3);
@@ -61,11 +65,13 @@
     </script>
   </head>
   <body>
-  	<div class="title">
+    <div id="map-canvas"></div>
+  	<div class="title content">
 	  	<h1>The 1915</h1>
 	  	<span>knowledge is priceless</span>
+	  	<br/>
+	  	<span style="color:red;">coming soon</span>
   	</div>
-    <div id="map-canvas"></div>
   </body>
 </html>
                         
